@@ -1,38 +1,27 @@
 go-2-iTerm2
 ===========
 
-### Website
+Opens a new [iTerm2](http://www.iterm2.com/) tab `cd`'d into the current Finder window's directory.
 
-http://lyptik.github.io/go-2-iTerm/
-
-### Download
-
-https://github.com/Lyptik/go-2-iTerm/releases
-
-Requirement :
+### Requirement
 
 [iTerm2](http://www.iterm2.com/)
 
+### Download
+
+https://github.com/aca2328/go-2-iTerm/releases
+
 ### How to use
 
-Make a shortcut to the app on your finder bar
-or
-Call it from spotlight or [alfred](https://www.alfredapp.com/) at any moment by typing 'go'
+Add the app to your Finder toolbar, or call it from Spotlight or [Alfred](https://www.alfredapp.com/) by typing `go`.
 
-### How it works
+### Build from source
 
-The app use the current focused finder and opens an new [iTerm2](http://www.iterm2.com/) tab
+```sh
+osacompile -o go2item.app go2item.scpt
+cp res/applet.icns go2item.app/Contents/Resources/applet.icns
+```
 
 ### Thanks
 
-This script is heavily inspired by this repo :
-
-https://github.com/LeEnno/alfred-terminalfinder
-
-### Legacy
-
-For previous build of iTerm2 use go-2-iTerm v0.2
-
-### TODO
-
-- Update the icon !
+Heavily inspired by [alfred-terminalfinder](https://github.com/LeEnno/alfred-terminalfinder).
